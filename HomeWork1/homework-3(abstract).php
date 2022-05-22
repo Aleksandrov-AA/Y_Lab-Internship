@@ -28,7 +28,7 @@ class Intern extends User{
     }
 
     function getName(){
-        print_r("ДЗ Сделал. Здорово!");
+        print_r(parent::getName() . "Здорово!");
     }
 
 }
