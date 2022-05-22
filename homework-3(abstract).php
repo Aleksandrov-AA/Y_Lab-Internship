@@ -20,11 +20,11 @@ abstract class User{
 class Intern extends User{
    
     public function save(){
-
+        echo "Реализуем обязательный метод save.<br>";
     }
 
     public function new(){
-
+        echo "\r\nРеализуем обязательный метод new.<br>";
     }
 
     function getName(){
@@ -34,4 +34,6 @@ class Intern extends User{
 }
 
 $user1 = new Intern;
+$user1->save();
+$user1->new();
 $user1->getName();
